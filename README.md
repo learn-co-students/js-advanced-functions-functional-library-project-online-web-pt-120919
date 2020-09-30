@@ -3,7 +3,7 @@
 ## Introduction
 
 "Functional programming (FP)" is a style of programming like record-oriented or
-object-oriented programming. It's very popular in languages that ***LOVE***
+object-oriented programming. It's very popular in languages that **_LOVE_**
 functions, like JavaScript.
 
 Don't get spooked though, we've been guiding you and coaching you all along to
@@ -16,11 +16,11 @@ First, read up on [FP][], and then come back.
 
 ## Learning Goals
 
-* Define an IIFE: Instantly-Invoked Function Expression
-* Pass data between functions and callbacks
-* Call a callback from within a function
-* Pass a callback to a function
-* Identify JavaScript's non-enforcement of arity
+- Define an IIFE: Instantly-Invoked Function Expression
+- Pass data between functions and callbacks
+- Call a callback from within a function
+- Pass a callback to a function
+- Identify JavaScript's non-enforcement of arity
 
 ## Instructions
 
@@ -37,7 +37,7 @@ parameters and return value should be. Your job is to develop the code to
 implement these functions.
 
 The entire `fi` library should be wrapped in an [Immediately Invoked Function
-Expression][IIFE] (IIFE), like the example below.
+Expression][iife] (IIFE), like the example below.
 
 ```javascript
 fi = (function() {
@@ -55,12 +55,12 @@ fi = (function() {
 fi.libraryMethod();
 ```
 
-Wrapping a library in code is sometimes called "[The Module Pattern][MP]"
+Wrapping a library in code is sometimes called "[The Module Pattern][mp]"
 
-The point of this exercise is to build ***your own implementation*** of the
+The point of this exercise is to build **_your own implementation_** of the
 collection-processing methods. Don't simply re-use the built-in methods!
 Leverage all you know about callbacks, passing data, etc. to prove that you
-could build your own collection-processing framework whenever ***you*** want.
+could build your own collection-processing framework whenever **_you_** want.
 
 ## Collection Functions (Arrays or Objects)
 
@@ -196,7 +196,7 @@ fi.compact([0, 1, false, 2, '', 3]);
 
 Returns a sorted copy of **array**, ranked in ascending order by the results of
 running each value through **callback**. The values from the original array
-should be retained within the sorted copy, just in ascending order.  
+should be retained within the sorted copy, just in ascending order.
 
 _The point of this exercise is not to write your own sorting algorithm and you are free to use the native [JS sort](https://www.w3schools.com/js/js_array_sort.asp)_
 
@@ -241,7 +241,7 @@ fi.uniq([1, 2, 1, 4, 1, 3]);
 => [1, 2, 4, 3]
 ```
 
-If you know in advance that the **array** is sorted, passing _true_ for **isSorted** will run a much faster algorithm. 
+If you know in advance that the **array** is sorted, passing _true_ for **isSorted** will run a much faster algorithm.
 
 ```javascript
 fi.uniq(['a', 'a', 'b', 'c', 'e', 'e', 'e', 'e'], true)
@@ -309,13 +309,13 @@ You've pushed your skills to a whole new level. Congratulations!
 
 ## Resources
 
-* [lodash][]
-* [ramda][]
+- [lodash][]
+- [ramda][]
 
 [lodash]: https://lodash.com
 [ramda]: https://ramdajs.com/docs/
 [filter]: https://ramdajs.com/docs/#filter
 [flip]: https://ramdajs.com/docs/#flip
-[FP]: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
-[IIFE]: (https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
-[MP]: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
+[fp]: https://medium.com/javascript-scene/master-the-javascript-interview-what-is-functional-programming-7f218c68b3a0
+[iife]: (https://en.wikipedia.org/wiki/Immediately-invoked_function_expression)
+[mp]: https://addyosmani.com/resources/essentialjsdesignpatterns/book/#modulepatternjavascript
